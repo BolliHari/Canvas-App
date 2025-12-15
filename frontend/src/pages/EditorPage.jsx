@@ -33,7 +33,7 @@ const EditorPage = ({ config }) => {
     const handleExportPdf = () => {
         const backendUrl = import.meta.env.VITE_BACKEND_URL
         console.log(backendUrl)
-        const BACKEND_URL_PDF =  `${backendUrl}/export/pdf`;
+        const BACKEND_URL_PDF =  `${backendUrl}/api/canvas/export/pdf`;
         window.location.href = BACKEND_URL_PDF;
     };
 
