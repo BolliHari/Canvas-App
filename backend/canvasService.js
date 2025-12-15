@@ -1,8 +1,12 @@
 import { createCanvas, loadImage as canvasLoadImage } from 'canvas';
 import PDFDocument from 'pdfkit';
 import { registerFont } from 'canvas';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path'; 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-registerFont(__dirname + '/fonts/Roboto.ttf', { family: 'CustomRoboto' });
+registerFont(join(__dirname, 'fonts', 'Roboto.ttf'), { family: 'CustomRoboto' });
 
 class CanvasManager {
     constructor() {
