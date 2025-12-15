@@ -14,7 +14,7 @@ This project is a dynamic, full-stack application that allows users to design an
 
 | Component | Technology/Library | Responsibility |
 | :--- | :--- | :--- |
-| **Frontend** | React (Vite/CRA) | User interface, form handling, file reading, API requests. |
+| **Frontend** | React | User interface, form handling, file reading, API requests. |
 | **Backend (API)** | Node.js (Express) | Routing, handling canvas state, serving as the API layer. |
 | **Canvas Engine** | `node-canvas` | Drawing shapes, registering fonts, loading images, generating Base64 preview and PDF buffer. |
 | **PDF Export** | `pdfkit` | Generating the final PDF document buffer from the canvas image. |
@@ -56,7 +56,7 @@ This project is a dynamic, full-stack application that allows users to design an
     ```bash
     npm run dev
     ```
-    *(The frontend will run on `http://localhost:3000` or similar port)*
+   
 
 ## 🛑 Critical Deployment & Architectural Notes
 
