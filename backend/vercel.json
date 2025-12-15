@@ -5,7 +5,7 @@
       "src": "server.js", 
       "use": "@vercel/node",
       "config": {
-        "installCommand": "npm install && apt-get update && apt-get install -y fontconfig fonts-dejavu-core"
+        "installCommand": "npm install && apk add --no-cache ttf-dejavu ttf-liberation fontconfig"
       }
     }
   ],
