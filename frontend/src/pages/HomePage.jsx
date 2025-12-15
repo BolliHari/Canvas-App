@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { initCanvas } from '../api'; 
 import CanvasInitModal from '../components/CanvasInitModal'; 
+import bgimage from '../assets/background.png';
 
 const HomePage = ({ onInitSuccess }) => {
     
@@ -24,7 +25,7 @@ const HomePage = ({ onInitSuccess }) => {
     return (
         <div className='relative h-screen flex items-center justify-center'>
             <img 
-                src="../public/background.png" 
+                src={bgimage}
                 alt="bg-image" 
                 className='absolute h-full w-full object-cover -z-10 opacity-50'
             />
