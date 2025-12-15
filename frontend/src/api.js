@@ -1,4 +1,5 @@
 
+
 const API_BASE_URL = `${import.meta.env.VITE_BACKEND_URL}/api/canvas`;
 
 
@@ -12,7 +13,7 @@ export const initCanvas = async (designName, width, height) => {
     if (!response.ok) {
         throw new Error('Failed to initialize canvas on server.');
     }
-    return response.json(); 
+    return response.json(); }
 
 
 export const addElement = async (elementData) => {
