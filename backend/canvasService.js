@@ -1,5 +1,8 @@
 import { createCanvas, loadImage as canvasLoadImage } from 'canvas';
 import PDFDocument from 'pdfkit';
+import { registerFont } from 'canvas';
+
+registerFont(__dirname + '/fonts/Roboto.ttf', { family: 'CustomRoboto' });
 
 class CanvasManager {
     constructor() {
@@ -62,7 +65,7 @@ class CanvasManager {
     
     drawText({ x, y, content, size, font = 'Arial', color }) {
         this.ctx.fillStyle = color;
-        this.ctx.font = `${size}px ${font}`; 
+        this.ctx.font = `${size}px CustomRoboto`;
         this.ctx.textAlign = 'left'; 
         this.ctx.textBaseline = 'top'; 
         this.ctx.fillText(content, x, y); 
