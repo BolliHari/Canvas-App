@@ -1,7 +1,13 @@
 {
   "version": 2,
   "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
+    { 
+      "src": "server.js", 
+      "use": "@vercel/node",
+      "config": {
+        "installCommand": "npm install && apt-get update && apt-get install -y fontconfig fonts-dejavu-core"
+      }
+    }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "server.js" }
