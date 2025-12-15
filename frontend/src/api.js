@@ -1,6 +1,6 @@
 // frontend/src/api.js
 
-const API_BASE_URL = 'http://localhost:5000/api/canvas';
+const API_BASE_URL = `${import.meta.env.VITE_BACKEND_URL}/api/canvas`;
 
 // 1. Initial Call: Initializes the canvas on the Node.js backend
 export const initCanvas = async (designName, width, height) => {
