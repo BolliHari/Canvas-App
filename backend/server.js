@@ -13,9 +13,6 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //routes
-app.use('/',(req,res)=>{
-    res.send("Server is Live....")
-})
 app.use('/api/canvas',elementsRouter)
 
 if(process.env.NODE_ENV !== 'production'){
